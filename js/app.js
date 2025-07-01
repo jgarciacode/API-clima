@@ -43,7 +43,7 @@ function mostrarAlerta(mensaje, tipoError) {
 }
 
 function consultarAPI(ciudad, pais) {
-    const id = 'ad431850a6983ace7813e9ce9c2eda86'
+    const id = import.meta.env.VITE_OPENWEATHERMAP_API_KEY;
 
     const url = `
     https://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${id}
